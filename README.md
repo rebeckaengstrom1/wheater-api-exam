@@ -5,7 +5,7 @@ Spring Boot REST API that fetches temperature and perceived temperature from Ope
 ## Architecture
 
 ```
-WeatherController          – HTTP layer, OpenAPI documentation
+WeatherController          – HTTP layer, validation, OpenAPI documentation
     └── WeatherService     – Business logic, orchestrates the two API steps
             └── OpenWeatherMapClient   – Communication with OpenWeatherMap (Geocoding + Current Weather)
 ```
