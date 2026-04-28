@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.github.rebeckaengstrom1</groupId>
-	<artifactId>wheater-api-exam</artifactId>
+	<artifactId>weather-api-exam</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>

@@ -1,4 +1,4 @@
-package com.github.rebeckaengstrom1.wheater_api_exam.model;
+package com.github.rebeckaengstrom1.weather_api_exam.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

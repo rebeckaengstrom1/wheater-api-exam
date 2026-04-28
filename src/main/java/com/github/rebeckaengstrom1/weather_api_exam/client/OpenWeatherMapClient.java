@@ -1,8 +1,8 @@
-package com.github.rebeckaengstrom1.wheater_api_exam.client;
+package com.github.rebeckaengstrom1.weather_api_exam.client;
 
-import com.github.rebeckaengstrom1.wheater_api_exam.config.OpenWeatherMapProperties;
-import com.github.rebeckaengstrom1.wheater_api_exam.model.CurrentWeatherResponse;
-import com.github.rebeckaengstrom1.wheater_api_exam.model.GeoLocation;
+import com.github.rebeckaengstrom1.weather_api_exam.config.OpenWeatherMapProperties;
+import com.github.rebeckaengstrom1.weather_api_exam.model.CurrentWeatherResponse;
+import com.github.rebeckaengstrom1.weather_api_exam.model.GeoLocation;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.util.UriComponentsBuilder;

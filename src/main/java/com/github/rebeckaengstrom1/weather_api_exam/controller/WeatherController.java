@@ -1,7 +1,7 @@
-package com.github.rebeckaengstrom1.wheater_api_exam.controller;
+package com.github.rebeckaengstrom1.weather_api_exam.controller;
 
-import com.github.rebeckaengstrom1.wheater_api_exam.model.WeatherResponse;
-import com.github.rebeckaengstrom1.wheater_api_exam.service.WeatherService;
+import com.github.rebeckaengstrom1.weather_api_exam.model.WeatherResponse;
+import com.github.rebeckaengstrom1.weather_api_exam.service.WeatherService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;

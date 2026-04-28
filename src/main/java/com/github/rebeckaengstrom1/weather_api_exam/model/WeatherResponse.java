@@ -1,4 +1,4 @@
-package com.github.rebeckaengstrom1.wheater_api_exam.model;
+package com.github.rebeckaengstrom1.weather_api_exam.model;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 

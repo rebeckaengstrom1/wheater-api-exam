@@ -1,9 +1,9 @@
-package com.github.rebeckaengstrom1.wheater_api_exam.service;
+package com.github.rebeckaengstrom1.weather_api_exam.service;
 
-import com.github.rebeckaengstrom1.wheater_api_exam.client.OpenWeatherMapClient;
-import com.github.rebeckaengstrom1.wheater_api_exam.model.CurrentWeatherResponse;
-import com.github.rebeckaengstrom1.wheater_api_exam.model.GeoLocation;
-import com.github.rebeckaengstrom1.wheater_api_exam.model.WeatherResponse;
+import com.github.rebeckaengstrom1.weather_api_exam.client.OpenWeatherMapClient;
+import com.github.rebeckaengstrom1.weather_api_exam.model.CurrentWeatherResponse;
+import com.github.rebeckaengstrom1.weather_api_exam.model.GeoLocation;
+import com.github.rebeckaengstrom1.weather_api_exam.model.WeatherResponse;
 import org.springframework.stereotype.Service;
 
 @Service

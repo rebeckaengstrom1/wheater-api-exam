@@ -1,4 +1,4 @@
-package com.github.rebeckaengstrom1.wheater_api_exam.config;
+package com.github.rebeckaengstrom1.weather_api_exam.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
