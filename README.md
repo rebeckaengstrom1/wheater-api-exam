@@ -9,6 +9,8 @@ WeatherController          – HTTP layer, validation, OpenAPI documentation
     └── WeatherService     – Business logic, orchestrates the two API steps
             └── OpenWeatherMapClient   – Communication with OpenWeatherMap (Geocoding + Current Weather)
 ```
+Error handling is managed centrally by GlobalExceptionHandler (@RestControllerAdvice),
+which maps domain exceptions to appropriate HTTP status codes with a uniform error response.
 
 ## Requirements
 
@@ -45,3 +47,13 @@ curl "http://localhost:8080/weather?city=Lund"
 
 - Swagger UI – http://localhost:8080/swagger-ui.html
 - OpenAPI JSON – http://localhost:8080/v3/api-docs
+
+
+## Configuration
+
+| Property        | Environment Variable | Default Value |
+|-----------------|---|---|
+| API-key         | `OPENWEATHERMAP_API_KEY` | *(required)* |
+| Unit            | – | `metric` (Celsius) |
+| Connect timeout | – | 5 000 ms |
+| Read timeout    | – | 10 000 ms |
