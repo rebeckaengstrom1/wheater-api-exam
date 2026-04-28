@@ -41,6 +41,7 @@ curl "http://localhost:8080/weather?city=Lund"
 }
 ```
 
-## Swagger UI
+## OpenAPI / Swagger UI
 
-Available at http://localhost:8080/swagger-ui.html when the app is running.
+- Swagger UI – http://localhost:8080/swagger-ui.html
+- OpenAPI JSON – http://localhost:8080/v3/api-docs

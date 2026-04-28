@@ -7,6 +7,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public record OpenWeatherMapProperties(
         String apiKey,
         String baseUrl,
-        String units
+        String units,
+        int connectTimeout,
+        int readTimeout
 ) {
 }

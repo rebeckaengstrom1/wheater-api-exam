@@ -4,10 +4,20 @@ import com.github.rebeckaengstrom1.weather_api_exam.client.OpenWeatherMapClient;
 import com.github.rebeckaengstrom1.weather_api_exam.model.CurrentWeatherResponse;
 import com.github.rebeckaengstrom1.weather_api_exam.model.GeoLocation;
 import com.github.rebeckaengstrom1.weather_api_exam.model.WeatherResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+/**
+ * Orchestrates the two-step weather lookup:
+ * <ol>
+ *   <li>Geocode city name → coordinates</li>
+ *   <li>Fetch weather for coordinates → build response</li>
+ * </ol>
+ */
 @Service
 public class WeatherService {
+    private static final Logger log = LoggerFactory.getLogger(WeatherService.class);
     private final OpenWeatherMapClient weatherClient;
     public WeatherService(OpenWeatherMapClient weatherClient) {
         this.weatherClient = weatherClient;
@@ -20,6 +30,7 @@ public class WeatherService {
      * @return a {@link WeatherResponse} with temperature and feels-like description
      */
     public WeatherResponse getWeather(String city) {
+        log.info("Fetching weather for city='{}'", city);
 
         GeoLocation location = weatherClient.geocode(city);
 
@@ -29,6 +40,7 @@ public class WeatherService {
         double feelsLike = weatherResponse.main().feelsLike();
 
         String description = getFeelsLikeDesc(temp, feelsLike);
+        log.info("Weather for '{}': temp={}, feelsLike={}", city, temp, feelsLike);
 
         return new WeatherResponse(temp, description);
     }
