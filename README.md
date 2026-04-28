@@ -2,7 +2,7 @@
 
 Spring Boot REST API that fetches temperature and perceived temperature from OpenWeatherMap.
 
-## Arkitektur
+## Architecture
 
 TBD
 
